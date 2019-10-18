@@ -7,7 +7,9 @@ package com.wsh.springboot.springbootdesignpattern.singletonpattern.singletonpat
  * <p>
  * 说明:
  * 双重检查方式:
- * Double-Check概念对于多线程开发者来说不会陌生，如代码中所示，我们进行了两次if (singleton == null)检查，这样就可以保证线程安全了。这样，实例化代码只用执行一次，后面再次访问时，判断if (singleton == null)，直接return实例化对象。
+ * Double-Check概念对于多线程开发者来说不会陌生，如代码中所示，
+ * 我们进行了两次if (singleton == null)检查，这样就可以保证线程安全了。这样，实例化代码只用执行一次，
+ * 后面再次访问时，判断if (singleton == null)，直接return实例化对象。
  * <p>
  * 优点: 线程安全；延迟加载；效率较高。
  * 缺点:
@@ -28,8 +30,9 @@ public class SingletonPattern06 {
 class Singleton {
     /**
      * 第一步: 定义一个Singleton对象
+     * 保证了不同线程对这个变量进行操作时的可见性，即一个线程修改了某个变量的值，这新值对其他线程来说是立即可见的。（实现可见性）
      */
-    private static Singleton instance;
+    private static volatile Singleton instance;
 
     /**
      * 第二步: 构造方法私有化，其他类就无法构造Singleton实例

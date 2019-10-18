@@ -43,6 +43,7 @@ class Singleton {
      * 第三步: 静态代码块中初始化Singleton实例
      */
     static {
+        //在类装载的时候，执行静态代码块，完成实例化
         instance = new Singleton();
     }
 
