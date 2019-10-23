@@ -1,13 +1,14 @@
 package com.wsh.springboot.springbootdesignpattern.factorypattern.factorymethod;
 
+
 /**
- * @Description: AudiCar国产奥迪汽车类
+ * @Description: BmwCar宝马汽车类
  * @author: weixiaohuai
  * @Date: 2019/10/19 20:49
  */
-public class ChinaAudiCar implements ICar {
+public class BmwCar implements ICar {
     @Override
     public void productCar() {
-        System.out.println("【国产】生产奥迪汽车...");
+        System.out.println("生产宝马汽车...");
     }
 }

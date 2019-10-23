@@ -7,6 +7,11 @@ package com.wsh.springboot.springbootdesignpattern.factorypattern.factorymethod;
  */
 public abstract class ICarFactory {
 
-    abstract ICar createFactory(CarTypeEnum carTypeEnum);
+    /**
+     * 创建产品方法
+     *
+     * @return ICar
+     */
+    abstract ICar createCar();
 
 }

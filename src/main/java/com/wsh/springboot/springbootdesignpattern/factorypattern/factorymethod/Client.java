@@ -2,10 +2,10 @@ package com.wsh.springboot.springbootdesignpattern.factorypattern.factorymethod;
 
 public class Client {
     public static void main(String[] args) {
-        JapanCarFactory japanCarFactory = new JapanCarFactory();
-        japanCarFactory.createFactory(CarTypeEnum.BMW);
+       ICarFactory bmwCarFactory = new BmwCarFactory();
+       bmwCarFactory.createCar().productCar();
 
-        ChinaCarFactory chinaCarFactory = new ChinaCarFactory();
-        chinaCarFactory.createFactory(CarTypeEnum.AUDI);
+        ICarFactory benzCarFactory = new BenzCarFactory();
+        benzCarFactory.createCar().productCar();
     }
 }
