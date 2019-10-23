@@ -55,8 +55,7 @@ public class Student implements Cloneable {
         Student student = null;
         try {
             student = (Student) super.clone();
-            Teacher teacher = (Teacher) student.getTeacher().clone();
-            student.setTeacher(teacher);
+            student.teacher = (Teacher) this.teacher.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
