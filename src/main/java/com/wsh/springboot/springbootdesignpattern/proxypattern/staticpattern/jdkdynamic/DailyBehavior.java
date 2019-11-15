@@ -1,4 +1,4 @@
-package com.wsh.springboot.springbootdesignpattern.proxypattern.staticpattern;
+package com.wsh.springboot.springbootdesignpattern.proxypattern.staticpattern.jdkdynamic;
 
 /**
  * @Description: 抽象接口

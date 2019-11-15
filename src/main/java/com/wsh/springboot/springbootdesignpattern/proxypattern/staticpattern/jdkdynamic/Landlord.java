@@ -1,4 +1,5 @@
-package com.wsh.springboot.springbootdesignpattern.proxypattern.staticpattern;
+package com.wsh.springboot.springbootdesignpattern.proxypattern.staticpattern.jdkdynamic;
+
 
 /**
  * @Description: 房东类

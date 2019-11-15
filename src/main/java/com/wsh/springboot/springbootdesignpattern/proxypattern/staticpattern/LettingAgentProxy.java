@@ -6,6 +6,9 @@ package com.wsh.springboot.springbootdesignpattern.proxypattern.staticpattern;
  * @Date: 2019/11/15 17:15
  */
 public class LettingAgentProxy implements DailyBehavior {
+    /**
+     * 持有一个被代理对象的引用
+     */
     private Landlord landlord;
 
     public LettingAgentProxy(Landlord landlord) {
@@ -14,6 +17,7 @@ public class LettingAgentProxy implements DailyBehavior {
 
     @Override
     public void rentApartment() {
+        this.prev();
         landlord.rentApartment();
     }
 
