@@ -8,7 +8,7 @@ package com.wsh.springboot.springbootdesignpattern.mediatorpattern;
  */
 public class QQUserA extends Colleague {
     private static final String USER_A_REGISTER_KEY = "userA";
-    private static final String USER_B_REGISTER_KEY = "userA";
+    private static final String USER_B_REGISTER_KEY = "userB";
     /**
      * 持有一个抽象中介者对象引用
      */

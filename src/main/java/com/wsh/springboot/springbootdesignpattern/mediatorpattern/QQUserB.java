@@ -12,7 +12,7 @@ public class QQUserB extends Colleague {
      */
     private Mediator mediator;
     private static final String USER_A_REGISTER_KEY = "userA";
-    private static final String USER_B_REGISTER_KEY = "userA";
+    private static final String USER_B_REGISTER_KEY = "userB";
 
     public QQUserB(Mediator mediator) {
         this.mediator = mediator;
